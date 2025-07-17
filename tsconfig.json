@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "target": "esnext",
+    "module": "esnext",
+    "removeComments": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["esnext", "webworker"],
+    "strictFunctionTypes": true,
+    "resolveJsonModule": false,
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "alwaysStrict": true,
+    "sourceMap": false,
+    "checkJs": true,
+    "noEmit": true,
+    "paths": {
+      "lib/*": ["./src/lib/*"]
+    }
+  },
+  "include": [
+    "@types",
+    "test",
+    "src"
+  ],
+  "exclude": [
+    "worker/build/**",
+    "node_modules"
+  ]
+}

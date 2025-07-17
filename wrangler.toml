@@ -1,0 +1,27 @@
+name = "cms-api"
+type = "javascript"
+
+# Add your account ID here
+account_id = ""
+workers_dev = true
+
+[build]
+command = "npm run build"
+
+[build.upload]
+format = "service-worker"
+main = "./index.mjs"
+dir = "./build"
+
+[[kv_namespaces]]
+binding = "DATABASE"
+id = "6acd639b6c9c47b49f58c7fe5a79c4a3"
+preview_id = "<ignored>"
+
+[vars]
+SENDGRID_EMAIL = "demo@ley.dev"
+SENDGRID_NAME = "DEMO CMS"
+
+[miniflare]
+kv_persist = true
+env_path = ".env.dev"

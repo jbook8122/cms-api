@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+*-lock.*
+*.lock
+*.log
+
+.env*
+!.env.example
+
+/build
+/ignore
